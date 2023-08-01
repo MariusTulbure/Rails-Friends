@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'home/about'
   # root 'home#index'
   root 'friends#index'
+  get 'home/contact'
 
 end
