@@ -2,6 +2,6 @@
 
 <div>
   <% @contact_details.each do |k, v| %>
-    <div><%= "#{k}: #{v}"  %></div>
+    <div><%= "#{k.to_s.capitalize}: #{v}"  %></div>
   <% end %>
 </div>
