@@ -1,0 +1,7 @@
+<tr>
+  <td><%= link_to friend.first_name + ' ' + friend.last_name, friend%></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.phone %></td>
+  <td><%= friend.twitter %></td>
+  <td><%= link_to "Delete", friend, data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }, class: "btn btn-outline-danger" %></td>
+</tr>
