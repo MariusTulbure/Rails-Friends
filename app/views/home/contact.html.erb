@@ -1,7 +1,7 @@
 <h1>Date de contact</h1>
 
-<p>
-  Nume: <%= @contact_details[:name] %>
-  <br/>
-  Numar de telefon: <%= @contact_details[:phone] %>
-</p>
+<div>
+  <% @contact_details.each do |k, v| %>
+    <div><%= "#{k}: #{v}"  %></div>
+  <% end %>
+</div>
